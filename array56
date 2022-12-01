@@ -1,0 +1,27 @@
+//дан целочисленный массив А размероа N (<-15)/ переписать в новй целочисленный массив В все эл-ты с порядковыми номерами, кратными (3, 6 ..), 
+и вывести размер полученного массива В и его содержимое. Условный операптор не использовать.
+#include "pt4.h"
+using namespace std;
+
+void Solve ()
+{
+    Task("Array56");
+    int n, size = 0; 
+    pt >> n;
+    int* a = new int[n];
+    int* b = new int[n];
+    for (int i = 0; i < n; i++
+    {
+        pt >> a[i];
+    }
+    for (int i = 2; i < n; i += 3) {
+        b[size++] = a[i];
+    }
+    pt << size;
+    for (int i = 0; i < size; i++) {
+        pt << b[i];
+    }
+    delete[]a;
+    delete[]b;
+}
+    
